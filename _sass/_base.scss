@@ -1,38 +1,44 @@
-* {margin: 0; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-body {background-color: #e3e3e3;}
+* {margin: 0; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;}
+body, html {background-color: #e3e3e3; overflow-x: hidden; max-width:100%;}
 header {
     background-image: url("../assets/bg.jpg");
     background-size: 100%;
+    background-attachment: fixed;
     height: 180px;
 }
 .menu {
 	background-color: rgba(21,101,192,0.94);
-	height: 56px;  
+	height: 56px;
 }
 .menu ul {
-	max-width: 900px; 
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
+	padding-left: 3px;
 }
 .menu li {
-	display: inline-block; 
-	padding-top: 5px; 
-	font-size: 1.3em; 
-	color: white; width: 30%; 
-	text-align: center; 
-	line-height: 48px; 
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 18px;
+	margin-left: -3px;
+	color: white; width: 33%;
+	text-align: center;
+	line-height: 48px;
 }
+@media (max-width: 500px) {.menu li {font-size: 14px;}}
 .menu li:hover {border-bottom: 4px solid white; cursor: pointer;}
 .menu a {color: white; text-decoration: none;}
 .gradient {
 	background: linear-gradient(rgba(0,0,0,0), rgba(21,101,192,0.94));
-	height: 124px;}
-
+	height: 125px;}
+.main {width: 96%; margin: 0 auto;}
 .content {
 	background-color: white;
 	margin: 20px auto;
 	max-width: 900px;
-	width: 100%; 
-	padding: 2%;
+	width: 100%;
 	border-radius:3px;
   box-shadow:0 0 4px #aaa;
 }
+hr {border: 0; height: 1px; background-color: grey;}
+article {padding: 2%;}
