@@ -2,12 +2,15 @@
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-body {
-  background-color: #e3e3e3; }
+body, html {
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  max-width: 100%; }
 
 header {
   background-image: url("../assets/bg.jpg");
   background-size: 100%;
+  background-attachment: fixed;
   height: 180px; }
 
 .menu {
@@ -15,18 +18,24 @@ header {
   height: 56px; }
 
 .menu ul {
+  width: 100%;
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 3px; }
 
 .menu li {
   display: inline-block;
   padding-top: 5px;
-  font-size: 1.3em;
+  font-size: 18px;
+  margin-left: -3px;
   color: white;
-  width: 30%;
+  width: 33%;
   text-align: center;
   line-height: 48px; }
 
+@media (max-width: 500px) {
+  .menu li {
+    font-size: 14px; } }
 .menu li:hover {
   border-bottom: 4px solid white;
   cursor: pointer; }
@@ -37,13 +46,30 @@ header {
 
 .gradient {
   background: linear-gradient(transparent, rgba(21, 101, 192, 0.94));
-  height: 124px; }
+  height: 125px; }
+
+.main {
+  width: 96%;
+  margin: 0 auto; }
 
 .content {
-  background-color: white;
+  background-color: #f8f8f8;
   margin: 20px auto;
-  max-width: 900px;
-  width: 100%;
-  padding: 2%;
-  border-radius: 3px;
-  box-shadow: 0 0 4px #aaa; }
+  max-width: 800px;
+  width: 100%; }
+
+h1 {
+  text-decoration: underline; }
+
+article {
+  clear: both;
+  height: 150px;
+  padding: 2% 0; }
+  article img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 20px; }
+
+article:not(:nth-child(3)) {
+  border-top: 1px solid grey; }
