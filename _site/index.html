@@ -5,7 +5,7 @@
   <title>Kursfahrt M&uuml;nchen</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-  
+
 <body>
 <header>
 <div class="gradient"></div>
@@ -13,7 +13,7 @@
 <ul>
 <li><a href="">Selfie-Tour</a></li>
 <li><a href="">BMW-Museum</a></li>
-<li><a href="">Bavaria-Filstudio</a></li>
+<li><a href="">Bavaria-Filmstudio</a></li>
 </ul>
 </nav>
 </header>
@@ -21,7 +21,7 @@
 <div class="main">
 <div class="content">
 <h1>Selfie-Tour</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quis dignissimos velit neque optio vel minima at dolorum rem aliquam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quis dignissimos velit neque optio vel minima at dolorum rem aliquam.</p><br>
 <article>
 <img src="../assets/marienplatz.jpg">
 <h1>Marienplatz</h1><br>
@@ -44,4 +44,10 @@
 <footer>
 </footer>
 
+<script src="http://code.jquery.com/jquery-latest.min.js" ></script>
+<script>
+$("article").click(function() {
+    $(this).toggleClass('a_full');
+});
+</script>
 </html>

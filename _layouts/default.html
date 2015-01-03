@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}  
+{% include head.html %}
 <body>
 {% include header.html %}
 <div class="main">
@@ -10,4 +10,10 @@
 </div>
 </body>
 {% include footer.html %}
+<script src="http://code.jquery.com/jquery-latest.min.js" ></script>
+<script>
+$("article").click(function() {
+    $(this).toggleClass('a_full');
+});
+</script>
 </html>
