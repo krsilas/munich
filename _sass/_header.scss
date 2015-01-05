@@ -1,0 +1,31 @@
+header {
+    background-image: url("../assets/bg.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 180px;
+}
+.menu {
+    background-color: $headerblue;
+    height: 56px;
+}
+.menu ul {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 3px;
+}
+.menu li {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 18px;
+    margin-right: -5px;
+    color: white; width: 33%;
+    text-align: center;
+    line-height: 48px;
+}
+@media (max-width: 500px) {.menu li {font-size: 14px;}}
+.menu li:hover, .active {border-bottom: 4px solid white; cursor: pointer;}
+.menu a {color: white; text-decoration: none;}
+.gradient {
+    background: linear-gradient(rgba(21,101,192,0.2), $headerblue);
+    height: 125px;}

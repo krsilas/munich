@@ -1,36 +1,5 @@
 * {margin: 0; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;}
 body, html {overflow-x: hidden; max-width:100%;}
-header {
-    background-image: url("../assets/bg.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-    height: 180px;
-}
-.menu {
-	background-color: rgba(21,101,192,0.94);
-	height: 56px;
-}
-.menu ul {
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-	padding-left: 3px;
-}
-.menu li {
-	display: inline-block;
-	padding-top: 5px;
-	font-size: 18px;
-	margin-right: -5px;
-	color: white; width: 33%;
-	text-align: center;
-	line-height: 48px;
-}
-@media (max-width: 500px) {.menu li {font-size: 14px;}}
-.menu li:hover {border-bottom: 4px solid white; cursor: pointer;}
-.menu a {color: white; text-decoration: none;}
-.gradient {
-	background: linear-gradient(rgba(0,0,0,0), rgba(21,101,192,0.94));
-	height: 125px;}
 .main {width: 96%; margin: 0 auto;}
 .content {
 	margin: 5% auto;
@@ -42,17 +11,15 @@ article {
 	clear: both;
 	height: 186px;
 	padding: 3% 2%;
-	-webkit-transition: height 0.25s ease-in;
-	transition-delay: 10s;
 	img {
 		width: 300px;
 		height: auto;
 		float: left;
 		margin-right: 20px;
-		-webkit-transition: width 0.25s ease-in;}
+		-webkit-transition: width 0.2s ease-in;}
 }
 article:hover {cursor:pointer; background-color:#f8f8f8;}
-article:not(:nth-child(4)){border-top: 1px solid lightgrey;}
+article:not(:first-of-type){border-top: 1px solid lightgrey;}
 @media (max-width: 800px) {
 	article {
 		height:auto;
@@ -61,3 +28,4 @@ article:not(:nth-child(4)){border-top: 1px solid lightgrey;}
 	}
 }
 .a_full {height: auto; img {width: 100%; height:auto; margin: 0 auto; float:none;}}
+.descr	{padding-left: 2%;}
