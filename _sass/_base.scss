@@ -1,16 +1,17 @@
-* {margin: 0; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;}
+* {margin: 0; font-family: "Helvetica", "Arial", sans-serif;}
 body, html {overflow-x: hidden; max-width:100%;}
 .main {width: 96%; margin: 0 auto;}
 .content {
-	margin: 5% auto;
-	max-width: 800px;
+	color: $brandblack;
+	margin: 3% auto;
+	max-width: 820px;
 	width: 100%;
 }
-h1 {text-decoration: underline;}
+h1 {text-decoration: underline; font-family: "Source Sans Pro";}
 article {
 	clear: both;
 	height: 186px;
-	padding: 3% 2%;
+	padding: 1.5em;
 	img {
 		width: 300px;
 		height: auto;
@@ -18,7 +19,7 @@ article {
 		margin-right: 20px;
 		-webkit-transition: width 0.2s ease-in;}
 }
-article:hover {cursor:pointer; background-color:#f8f8f8;}
+article:hover {cursor:pointer; background-color:rgba($brandblack, 0.05);}
 article:not(:first-of-type){border-top: 1px solid lightgrey;}
 @media (max-width: 800px) {
 	article {

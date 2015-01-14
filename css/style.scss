@@ -2,7 +2,13 @@
 ---
 @charset "utf-8";
 
-$headerblue: rgba(21,101,192,0.95);
+
+$brandblack: #333;
+$brandwhite: #eaeaea;
+$brandblue: #1F6BC2;
+$brandorange: #FA9D6C;
+$brandyellow: #ECF4A1;
+$headerblue: rgba($brandblue,0.95);
 
 @import
         "base", "header"
