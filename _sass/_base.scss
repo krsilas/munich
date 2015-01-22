@@ -17,7 +17,11 @@ article {
 		height: auto;
 		float: left;
 		margin-right: 20px;
-		-webkit-transition: width 0.2s ease-in;}
+		-webkit-transition: width 0.2s ease-in;
+		-moz-transition: width 0.2s ease-in;
+		-o-transition: width 0.2s ease-in;
+		transition: width 0.2s ease-in;
+	}
 }
 article:hover {cursor:pointer; background-color:rgba($brandblack, 0.05);}
 article:not(:first-of-type){border-top: 1px solid lightgrey;}
