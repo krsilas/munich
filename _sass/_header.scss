@@ -1,3 +1,4 @@
+/* header */
 header {
     background: url("../assets/bg.jpg");
     background-attachment: fixed;
@@ -24,9 +25,19 @@ header {
     }
     a {color: white; text-decoration: none; font-family:"Source Sans Pro";}
 }
-.menu li:hover, .active {border-bottom: 4px solid white; cursor: pointer;}
+.menu li:not(.active) {border-bottom: 4px solid transparent; transition: all 0.5s ease; -webkit-transition: all 0.5s}
+.menu li:hover, .active {
+    border-bottom: 4px solid white;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 .gradient {
     background: linear-gradient(rgba($brandblue,0.2), $headerblue);
     height: 75px;}
 @media (max-width: 500px) {.menu li {font-size: 14px;}}
+
 

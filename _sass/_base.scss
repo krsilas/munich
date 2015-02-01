@@ -1,12 +1,13 @@
 * {margin: 0; font-family: "Helvetica", "Arial", sans-serif;}
 body, html {overflow-x: hidden; max-width:100%;}
-.main {width: 96%; margin: 0 auto;}
-.content {
+/* Hauptteil */
+.main {
 	color: $brandblack;
 	margin: 3% auto;
 	max-width: 820px;
-	width: 100%;
+	width: 96%;
 }
+/* Artikel */
 h1 {text-decoration: underline; font-family: "Source Sans Pro";}
 p {font-weight: light; line-height: 23px; margin-top: 10px;}
 article {
