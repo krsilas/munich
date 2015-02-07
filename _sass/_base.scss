@@ -8,7 +8,7 @@ body, html {overflow-x: hidden; max-width:100%;}
 	width: 96%;
 }
 /* Artikel */
-h1 {text-decoration: underline; font-family: "Source Sans Pro";}
+h1:not(.title) {text-decoration: underline; font-family: "Source Sans Pro";}
 p {font-weight: light; line-height: 23px; margin-top: 10px;}
 article {
 	clear: both;
