@@ -8,10 +8,10 @@
 </div>
 </body>
 {% include footer.html %}
+<script src="../assets/jquery.js"></script>
 <script>
-document.querySelector( "article" )
-  .addEventListener( "click", function() {
-    this.classList.toggle( "a_full" );
-  });
+-$("article").click(function() {
+-    $(this).toggleClass('a_full');
+-});
 </script>
 </html>
